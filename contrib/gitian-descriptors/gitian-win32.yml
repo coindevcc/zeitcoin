@@ -32,10 +32,6 @@ script: |
   cd $HOME/build/
   #
   cd zeitcoin
-  cd src/leveldb
-  chmod 755 build_detect_platform
-  cd ..
-  cd ..
   export PATH=$STAGING/host/bin:$PATH
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
